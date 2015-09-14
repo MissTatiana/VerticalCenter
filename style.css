@@ -1,8 +1,26 @@
-.outer {
-	border: 1px solid #eee;
+.row {
+	margin-top: 40px;
 }
 
-.child {
+.parent {
+	border: 1px solid #eee;
+	display: flex;
+}
+
+.parent > div {
 	border-left: 1px solid #000;
 	text-align: center;
+	align-items: center;
+	vertical-align: middle;
 }
+
+
+
+/*
+	-display flex apparently fixes the border
+		-wont work with align-items
+	-align items vertically aligns everything
+	-justify content doesn't do anything
+	-margin auto to child does the same as align items
+		-margin auto on parent does nothing
+*/
