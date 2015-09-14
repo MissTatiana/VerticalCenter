@@ -1,0 +1,8 @@
+.outer {
+	border: 1px solid #eee;
+}
+
+.child {
+	border-left: 1px solid #000;
+	text-align: center;
+}
