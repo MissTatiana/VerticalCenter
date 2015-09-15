@@ -4,14 +4,17 @@
 
 .parent {
 	border: 1px solid #eee;
-	display: flex;
+	/*display: flex;*/
+	display: table;
+	table-layout: fixed;
 }
 
 .parent > div {
 	border-left: 1px solid #000;
 	text-align: center;
-	align-items: center;
-	vertical-align: middle;
+	display: table-cell;
+    vertical-align: middle;
+    float: none;
 }
 
 
@@ -23,4 +26,7 @@
 	-justify content doesn't do anything
 	-margin auto to child does the same as align items
 		-margin auto on parent does nothing
+	-vertical align middle - nothing
+	-display table and tabel-cell makes it worse 
+		-float none to work
 */
