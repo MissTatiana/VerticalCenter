@@ -35,6 +35,44 @@
 			</div>
 		</div>
 
+		<h2>Vertical Align Bootstrap Columns</h2>
+		<pre><code>
+		&lt;div class="parent valign"&gt;
+		  &lt;div class="child col-md-2"&gt;
+		     &lt;div&gt;
+		       &lt;h1&gt;Stuff here&lt;/h1&gt;
+		     &lt;/div&gt;
+
+		     &lt;div&gt;
+		       &lt;h1&gt;Stuff here&lt;/h1&gt;
+		     &lt;/div&gt;
+		  &lt;/div&gt;
+
+		  &lt;div class="child col-md-6"&gt;
+		    &lt;h3&gt;Content&lt;/h3&gt;
+		  &lt;/div&gt;
+
+		  &lt;div class="child col-md-4"&gt;
+		    &lt;h3&gt;Content&lt;/h3&gt;
+		  &lt;/div&gt;
+		&lt;/div&gt;
+		</code></pre>
+
+		<pre><code>
+		.parent {
+		  border: 1px solid #eeel
+		  display: table;
+		  table-layout: fixed;
+		}
+
+		.parent &gt; div {
+		  border-left: 1px solid #000;
+		  text-align: center;
+		  display: table-cell;
+		  vertical-align: middle;
+		  float: none;
+		}
+		</code></pre>
 
 	</div><!-- container -->
 
